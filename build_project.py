@@ -285,17 +285,9 @@ def build_notebook(results: dict) -> None:
 def build_readme(results: dict) -> None:
     readme = f"""# Superstore Sales Analysis
 
-## What was analyzed
-The project analyzes the `Sample - Superstore.csv` retail sales dataset to understand where the company earns and loses money.
 
-## What was done
-- Loaded the CSV file with pandas
-- Checked columns, missing values, and duplicates
-- Calculated total sales, total profit, and unique categories
-- Analyzed profit by category, sales by region, loss-making rows, and top products by revenue
-- Built visualizations with matplotlib and seaborn
 
-## Key findings
+
 - Total sales: {results["total_sales"]:.2f}
 - Total profit: {results["total_profit"]:.2f}
 - Categories: {", ".join(results["categories"])}
